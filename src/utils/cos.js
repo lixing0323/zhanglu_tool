@@ -34,8 +34,6 @@ export const COS_IMAGE_PREFIX = '?imageView2'
 const cos = new COS({
   // path style 指正式请求时，Bucket 是在 path 里，这样用相同园区多个 bucket 只需要配置一个园区域名
   // ForcePathStyle: true,
-  SecretId: 'AKIDRnwq8dHD6kZAXfaDgz6lAIlz5vWqmYdJ',
-  SecretKey: 'qheOB71hWTeiWRXxNyOoxsjT2TghRzIJ'
   // 是否使用全球加速域名。开启该配置后仅以下接口支持操作：putObject、getObject、headObject、optionsObject、multipartInit、multipartListPart、multipartUpload、multipartAbort、multipartComplete、multipartList、sliceUploadFile、uploadFiles
   // UseAccelerate: true,
 })
