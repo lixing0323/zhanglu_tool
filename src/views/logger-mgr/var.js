@@ -13,8 +13,6 @@ import { CreateDate, getRandomNumber } from '@/utils/business'
 import { USER_OPTIONS } from '@/views/user-mgr/var'
 import { parseTime } from '@/utils'
 
-const NAME_OPTIONS = ['A', 'B', 'C', 'D']
-const LEVEL_OPTIONS = ['一级', '二级']
 const RECORD_OPTIONS = ['查看', '编辑', '删除']
 
 function getTime(minDay, maxDay) {

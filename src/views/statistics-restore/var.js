@@ -1,7 +1,7 @@
 import { getRandomNumber } from '@/utils/business'
 
 function getItem(i) {
-  const name = `名称${i+1}`
+  const name = `名称${i + 1}`
   const method = `方式${getRandomNumber(1, 6)}`
   const type = `类型${getRandomNumber(1, 6)}`
   const file = getRandomNumber(1, 3)

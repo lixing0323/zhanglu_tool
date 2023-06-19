@@ -1,5 +1,5 @@
 module.exports = {
-  title: '药品检验电子监管查询管理系统',
+  title: '防火监督检查智能管理系统软件',
 
   /**
    * @type {boolean} true | false

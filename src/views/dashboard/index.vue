@@ -11,7 +11,7 @@
 <script>
 import Statistics from './statistics'
 import LineChart from './line-chart'
-import {getRandomNumber} from "@/utils/business";
+import { getRandomNumber } from '@/utils/business'
 
 export default {
   name: 'Dashboard',

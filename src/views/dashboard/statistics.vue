@@ -33,7 +33,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            产品总数
+            设备总数
           </div>
           <count-to :start-val="0" :end-val="getProductCount()" :duration="3200" class="card-panel-num" />
         </div>
@@ -73,7 +73,7 @@ export default {
       return getRandomNumber(50, 90)
     },
     getProductCount() {
-      return getRandomNumber(2000, 4000)
+      return getRandomNumber(50, 200)
     }
   }
 }

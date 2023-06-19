@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <div id="login-bg-container" class="login-bg-container">
+    <div id="login-bg-container" class="login-bg-container" :style="{ 'background-image': `url(${backgroundUrl})` }">
       <div class="login-bg-inside">
         <div class="login-operation-container">
 
@@ -80,6 +80,7 @@
 import { useAuthUserStore } from '@/store/modules/user'
 import Version from '@/layout/components/Sidebar/Version'
 import defaultSettings from '@/settings'
+import { getRandomNumber } from '@/utils/business'
 
 const userStore = useAuthUserStore()
 
@@ -112,6 +113,12 @@ export default {
       changePwdDialogVisible: false,
       adminListDialogVisible: false,
       title: defaultSettings.title
+    }
+  },
+  computed: {
+    backgroundUrl() {
+      const name = getRandomNumber(1, 10)
+      return require(`@/assets/login/${name}.png`)
     }
   },
   watch: {
@@ -291,7 +298,7 @@ $bg: #EDE9E0;
         border-radius: 12px;
 
         .login-bg-form {
-          padding: 0 80px;
+          padding: 0 120px;
         }
 
         .title {

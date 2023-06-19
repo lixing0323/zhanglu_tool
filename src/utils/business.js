@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-export const CreateDate = '2023/03/26 16:01:24'
+export const CreateDate = '2023/02/10 16:01:24'
 
 export function getMenuName() {
   const title = defaultSettings.title
