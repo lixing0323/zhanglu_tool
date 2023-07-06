@@ -15,7 +15,7 @@
         <ht-table-column type="selection" />
         <ht-table-column type="index" width="55" label="序号" />
         <ht-table-column label="用户名" prop="username" />
-        <ht-table-column label="时间" prop="time" />
+        <ht-table-column label="时间" prop="time" min-width="160" />
         <ht-table-column label="日志操作记录" prop="record" />
         <ht-table-column label="操作次数" prop="optCount" />
         <ht-table-column label="类型" prop="type" />

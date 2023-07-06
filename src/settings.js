@@ -1,5 +1,5 @@
 module.exports = {
-  title: '防火监督检查智能管理系统软件',
+  title: '基于云计算的运输经济信息共享平台软件',
 
   /**
    * @type {boolean} true | false

@@ -15,14 +15,14 @@
       <ht-table ref="table" v-loading="isLoading" :data="list" row-key="id">
         <ht-table-column type="index" width="55" label="序号" />
         <ht-table-column :label="`${getMenuName()}统计归类`" prop="name" width="80" />
-        <ht-table-column label="时间" prop="date" width="100" />
+        <ht-table-column label="时间" prop="date" width="95" />
         <ht-table-column label="识别码" prop="code" min-with="200" />
         <ht-table-column label="等级" prop="level" width="70" />
         <ht-table-column :label="`${getMenuName()}统计模式`" prop="mode" width="80" />
         <ht-table-column :label="`${getMenuName()}统计参数`" prop="params" width="80" />
-        <ht-table-column label="开始时间" prop="startTime" />
-        <ht-table-column label="结束时间" prop="endTime" />
-        <ht-table-column label="方式" prop="method" width="70" />
+        <ht-table-column label="开始时间" prop="startTime" min-with="160" />
+        <ht-table-column label="结束时间" prop="endTime" min-with="160" />
+        <ht-table-column label="方式" prop="method" width="60" />
         <ht-table-column label="操作" width="90" fixed="right">
           <template slot-scope="{ row }">
             <el-button type="text" class="primary" @click="onEdit(row)">编辑</el-button>
